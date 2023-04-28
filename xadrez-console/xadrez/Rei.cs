@@ -115,7 +115,7 @@ namespace xadrez
                     }
                 }
                 // #jogadaespecial roque grande
-                Posicao posT2 = new Posicao(Posicao.Linha, Posicao.Coluna + 4);
+                Posicao posT2 = new Posicao(Posicao.Linha, Posicao.Coluna - 4);
                 if (TesteTorreParaRoque(posT2))
                 {
                     Posicao p1 = new Posicao(Posicao.Linha, Posicao.Coluna - 1);
