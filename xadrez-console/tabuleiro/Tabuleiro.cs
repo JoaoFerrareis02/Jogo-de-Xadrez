@@ -48,7 +48,7 @@
             }
             Peca aux = Peca(pos);
             aux.Posicao = null;
-            _pecas[pos.Linha,pos.Coluna] = null;
+            _pecas[pos.Linha, pos.Coluna] = null;
             return aux;
         }
 

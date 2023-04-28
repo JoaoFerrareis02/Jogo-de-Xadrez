@@ -4,7 +4,7 @@ namespace xadrez
 {
     internal class Torre : Peca
     {
-        public Torre(Tabuleiro tab, Cor cor) : base(tab,cor)
+        public Torre(Tabuleiro tab, Cor cor) : base(tab, cor)
         {
         }
 
@@ -30,8 +30,8 @@ namespace xadrez
             pos.DefinirValores(Posicao.Linha - 1, Posicao.Coluna);
             while (Tab.PosicaoValida(pos) && PodeMover(pos))
             {
-                mat[pos.Linha,pos.Coluna] = true;
-                if(Tab.Peca(pos) != null && Tab.Peca(pos).Cor != Cor)
+                mat[pos.Linha, pos.Coluna] = true;
+                if (Tab.Peca(pos) != null && Tab.Peca(pos).Cor != Cor)
                 {
                     break;
                 }
